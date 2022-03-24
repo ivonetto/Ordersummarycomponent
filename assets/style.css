@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+:root{
+    --Paleblue: #e8e0ff;
+    --Brightblue: #3828E0;
+    --Verypaleblue: #f4f7ff;
+    --Veryblue: #eceffa;
+    --Desaturatedblue: #717fa6;
+    --Darkblue: #1F2E56;
+    --font: 'Red Hat Display', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.background{
+    background-image: url(/images/pattern-background-desktop.png);
+    background-repeat: no-repeat;
+    background-color: var(--Paleblue);
+    height: 100vh;
+    width: 100%;
+}
+
+.div-container{
+    background-color: var(--Verypaleblue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.div-container img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.content {
+    padding: 30px 20px;
+}
+
+
+.title{
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--Darkblue);
+    margin-bottom: 20px;
+}
+
+.text{
+    color: var(--Desaturatedblue);
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 80px;
+    padding: 0 20px;
+    margin: 30px 0;
+    background: var(--Veryblue);
+}
+
+.plan-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.plan-info img {
+    width: 45px;
+    margin-right: 15px;
+}
+
+.span-title{
+    color: var(--Darkblue);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.span-text{
+    font-size: 15px;
+}
+
+.change{
+    color: var(--Desaturatedblue);
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.change:hover{
+    color: var(--Brightblue);
+}
+
+.orders{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-btn{
+    width: 90%;
+    height: 50px;
+    font-weight: 900;
+    background-color: var(--Brightblue);
+    border-radius: 15px;
+    color: var(--Verypaleblue);
+    text-decoration: none;
+    padding: 15px;
+}
+
+.payment-btn:hover{
+    background-color: var(--Darkblue);
+}
+
+.cancel-btn{
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-weight: 900;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover{
+    color: var(--Darkblue);
+}
+
+@media screen and(min-width: 800px){
+    .background {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/images/pattern-background-mobile.png");
+      }
+
+      
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: #3d51a2; }
